@@ -1,6 +1,10 @@
 import java.util.*;
 public class ATM {
-	HashMap<String, Double> accounts = new HashMap<String, Double>();
+	HashMap<String, Double> accounts;
+	
+	public ATM() {
+		accounts = new HashMap<String,Double>();
+	}
 	
 	public void deposit(String bankID, Double amount) {
 		if(accounts.containsKey(bankID)) {
